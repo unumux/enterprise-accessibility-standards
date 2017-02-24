@@ -1,0 +1,10 @@
+@mixin base() {
+
+}
+
+.article {
+    @include base;
+
+    @import "content";
+    @import "heading";
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unum Enterprise Accessibility States and Properties</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/site.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="page-header__heading">
+            Unum Enterprise Acessibility Standards
+        </h1>
+        <h2 class="page-header__subheading">
+            Aria States & Properties
+        </h2>
+    </header>
+    <main class="page-content">
+        <nav class="primary-nav">
+            <ul class="primary-nav__list">
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link" href="./index.html">
+                        General
+                    </a>
+                </li>
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link" href="./roles.html">
+                        Roles
+                    </a>
+                </li>
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link--active" href="./states-and-properties.html">
+                        States & Properties
+                    </a>
+                </li>
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link" href="./definitions.html">
+                        Definitions
+                    </a>
+                </li>
+                <li class="primary-nav__item">
+                    <a class="primary-nav__link" href="./components.html">
+                        Components
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <article class="article">
+            <h1 class="article__heading">
+                Global States and Properties
+            </h1>
+            <div class="article__content">
+                <h2>Global States</h2>
+                <ul>
+                    <li>
+                        <h1>aria-busy<h1>
+                    </li>
+                    <li>
+                        <h1>aria-disabled</h1>
+                        <p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. See related aria-hidden and aria-readonly</p>
+                        <p>Boolean</p>
+                    </li>
+                    <li>
+                        <h1>aria-grabbed</h1>    
+                    </li>
+                    <li>
+                        <h1>aria-hidden</h1>
+                        <p>Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author. See related aria-disabled.</p>
+                    </li>
+                    <li>
+                        <h1>aria-invalid</h1>
+                        <p>Indicates the entered value does not conform to the format expected by the application.</p>
+                    </li>
+                </ul>
+                <h2>Global Properties</h2>
+                <ul>
+                    <li>
+                        <h1>aria-atomic</h1>
+                    </li>
+	                <li>
+                        <h1>aria-controls</h1>
+                        <p>Identifies the element (or elements) whose contents or presence are controlled by the current element. See related aria-owns.</p>
+                        <p>For example, a group of checkboxes that control values tracked live in a table or graph.</p>
+                    </li>
+                    <li>
+                        <h1>aria-describedby</h1>
+                        <p>Identifies the element (or elements) that describes the object.See related aria-labelledby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-dropeffect</h1>
+                    </li>
+                    <li>
+                        <h1>aria-flowto</h1>
+                    </li>
+                    <li>
+                        <h1>aria-haspopup</h1>
+                    </li>
+                    <li>
+                        <h1>aria-label</h1>
+                        <p>Defines a string value that labels the current element. See related aria-label and aria-describedby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-labelledby</h1>
+                        <p>Identifies the element (or elements) that labels the current element. See related aria-label and aria-describedby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-live</h1>
+                    </li>
+                    <li>
+                        <h1>aria-owns</h1>
+                    </li> 
+                    <li>
+                        <h1>aria-relevant</h1>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article  class="article">
+            <h1 class="article__heading">
+                Widget States and Properties
+            </h1>
+            <div class="article__content">
+                <h2>Widget States</h2>
+                <ul>
+                    <li>
+                        <h1>aria-checked</h1>
+                        <p>Indicates the current "checked" state of checkboxes, radio buttons, and other widgets. See related aria-pressed and aria-selected.</p>
+                    </li>
+                    <li>
+                        <h1>aria-disabled</h1>
+                        <p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. See related aria-hidden and aria-readonly.</p>
+                    </li>
+                    <li>
+                        <h1>aria-expanded</h1>
+                    </li>
+                    <li>
+                        <h1>aria-hidden</h1>
+                        <p>Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author. See related aria-disabled.</p>
+                    </li>
+                    <li>
+                        <h1>aria-invalid</h1>
+                    </li>
+                    <li>
+                        <h1>aria-pressed</h1>
+                    </li>
+                    <li>
+                        <h1>aria-selected</h1>
+                        <p>Indicates the current "selected" state of various widgets. See related aria-checked and aria-pressed.</p>
+                    </li>
+                </ul>
+                <h2>Widget Property Attributes</h2>
+                <ul>
+                    <li>
+                        <h1>aria-autocomplete</h1>
+                    </li>
+                    <li>
+                        <h1>aria-haspopup</h1>
+                    </li>
+                    <li>
+                        <h1>aria-label</h1>
+                        <p>Defines a string value that labels the current element. See related aria-label and aria-describedby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-level</h1>
+                    </li>
+                    <li>
+                        <h1>aria-multiline</h1>
+                    </li>
+                    <li>
+                        <h1>aria-multiselectable</h1>
+                    </li>
+                    <li>
+                        <h1>aria-orientation</h1>
+                        <p>Indicates whether the element and orientation is horizontal or vertical.</p>
+                    </li>
+                    <li>
+                        <h1>aria-readonly</h1>
+                        <p>Indicates that the element is not editable, but is otherwise operable. See related aria-disabled.</p>
+                    </li>
+                    <li>
+                        <h1>aria-required</h1>
+                        <p>Indicates that user input is required on the element before a form may be submitted.</p>
+                    </li>
+                    <li>
+                        <h1>aria-sort</h1>
+                    </li>
+                    <li>
+                        <h1>aria-valuemax</h1>
+                    </li>
+                    <li>
+                        <h1>aria-valuemin</h1>
+                    </li>
+                    <li>
+                        <h1>aria-valuenow</h1>
+                    </li>
+                    <li>
+                        <h1>aria-valuetext</h1>
+                    </li>
+            </div>
+        </article>
+        <article class="article">
+            <h1 class="article__heading">
+                Live Region State and Property Attributes
+            </h1>
+            <div class="article__content">
+                <h2>Live Region States</h2>
+                <ul>
+                    <li>
+                        <h1>aria-busy</h1>
+                    </li>
+                </ul>
+                <h2>Live Region Properties</h2>
+                <ul>
+                    <li>
+                        <h1>aria-atomic</h1>
+                    </li>
+                    <li>
+                        <h1>aria-live</h1>
+                    </li>
+                    <li>
+                        <h1>aria-relevant</h1>
+                    </li>
+                </ul>
+            </div>
+        </article>
+       <article class="article">
+            <h1 class="article__heading">Drag and Drop State and Property Attributes</h1>
+            <div class="article__content">
+                <h2>Drag and Drop States</h2>
+                <ul>
+                    <li>
+                        <h1>aria-grabbed</h1>
+                    </li>
+                </ul>
+                <h2>Drag and Drop Properties</h2>
+                <ul>
+                    <li>
+                        <h1>aria-dropeffect</h1>
+                    </li>
+                </ul>
+            </div>
+       </article>
+       <article class="article">
+            <h1 class="article__heading">
+                Relationship State and Property Attributes
+            </h1>
+            <div class="article__content">
+                <h2>Drag and Drop States</h2>
+                <ul>
+                    <li>
+                        <h1>N/A</h1>
+                    </li>
+                </ul>
+                <h2>Drag and Drop Properties</h2>
+                <ul>
+                    <li>
+                        <h1>aria-activedescendant</h1>
+                    </li>
+                    <li>
+                        <h1>aria-controls</h1>
+                    </li>
+                    <li>
+                        <h1>aria-describedby</h1>
+                        <p>Identifies the element (or elements) that describes the object.See related aria-labelledby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-flowto</h1>
+                        <p>Identifies the element (or elements) that describes the object.See related aria-labelledby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-labelledby</h1>
+                        <p>Identifies the element (or elements) that labels the current element. See related aria-label and aria-describedby.</p>
+                    </li>
+                    <li>
+                        <h1>aria-owns</h1>
+                    </li>
+                    <li>
+                        <h1>aria-posinset</h1>
+                    </li>
+                    <li>
+                        <h1>aria-setsize</h1>
+                    </li>
+                </ul>
+            </div>
+       </article>
+    </main>
+    <script src="scripts/site.min.js"></script>
+</body>
+</html>

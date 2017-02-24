@@ -1,0 +1,36 @@
+$nav-bgcolor: #333;
+$nav-text: #fff;
+
+@mixin base() {
+    color: $nav-text;
+    background-color: rgba($nav-bgcolor, .5);
+    display: block;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $nav-bgcolor;
+        opacity: 0.6;
+    }
+
+    &:focus {
+        background-color: $nav-bgcolor;
+    }
+
+    &:active {
+        background-color: $nav-bgcolor;
+    }
+}
+&__link {
+    @include base;
+
+    &--active {
+
+
+        @include base;
+        background-color: $nav-bgcolor;
+    }
+}
