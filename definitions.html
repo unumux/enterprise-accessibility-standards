@@ -13,14 +13,14 @@
             Unum Enterprise Acessibility Standards
         </h1>
         <h2 class="page-header__subheading">
-            Aria General Guidelines
+            Aria Definitions
         </h2>
     </header>
     <main class="page-content">
         <nav class="primary-nav">
             <ul class="primary-nav__list">
                 <li class="primary-nav__item">
-                    <a class="primary-nav__link--active" href="./index.html">
+                    <a class="primary-nav__link" href="./index.html">
                         General
                     </a>
                 </li>
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="primary-nav__item">
-                    <a class="primary-nav__link" href="./definitions.html">
+                    <a class="primary-nav__link--active" href="./definitions.html">
                         Definitions
                     </a>
                 </li>
@@ -48,21 +48,9 @@
         </nav>
 
         <article class="article">
-            <h1 class="article__heading">General Rules</h1>
+            <h1 class="article__heading">General Definitions</h1>
             <div class='article__content'>
-                <p>TL;DR</p>
-                <p>Anything you can do with your mouse, make sure you can do it through the keyboard.</p>
-                
-                <p>
-                    WAI-ARIA defines a way to make Web content and Web applications more accessible to people with disabilities.
-                </p>
-                <p>    
-                    <a class="main-header__link" href="https://www.w3.org/TR/wai-aria/">W3C ARIA Documentation</a>
-                </p>
-
-                <h1>
-                    General Guidelines and Rules
-                </h1>
+               
                 <ol>
                     <li>
                         If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state, or property to make it accessible, then do so
@@ -99,24 +87,7 @@
             </div>
         </artcle>
 
-        <article class="article">
-            <h1 class="article__heading">
-                Keyboard Requirements
-            </h1>
-            <div class="article__content">
-                <ol>
-                    <li>
-                        Ensure that all interactive elements are keyboard accessible
-                    </li>
-                    <li>
-                        Add the <code>tabindex</code> attribute whenever necessary
-                    </li>
-                    <li>
-                        Disabled controls should not be in the tab order
-                    </li>
-                </ol>
-            </div>
-        </article>
+        
     </main>
     <script src="scripts/site.min.js"></script>
 </body>
