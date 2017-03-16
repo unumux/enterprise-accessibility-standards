@@ -1,11 +1,31 @@
+//Content section backgrounds
+$primary-background-color: #112633;
+$secondary-background-color: #8ca5ba;
+//Text
+$primary-text-color: #061724;
+$primary-text-color-inverse: #fff;
+$primary-text-color-disabled: #b4c2cd;
+$secondary-text-color: #2bb6d9;
+
+$primary-link-color: #2bb6d9;
+$primary-link-color-darker: #0983a2; 
+$primary-link-color-inverse: #fff;
+//Accents
+$primary-accent-color: #2bb6d9;
+$primary-accent-color-darker: #0983a2;
+
+
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background: #dedede;
-    color: #111;
+    background: $primary-background-color;
+    color: $primary-text-color;
     font-family: "Open sans", arial, sans-serif;
+    font-size: 1rem;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
@@ -14,4 +34,87 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+}
+
+h1 {
+    font-size: 1.35rem;
+    font-family: oswald, arial, sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+p {
+    //padding-left: 1rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;       
+    margin-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+
+    li {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+a {
+    color: $primary-link-color-inverse;
+    
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+
+    }
+    &:visited{
+
+    }
+    &:focus {
+        outline-color: $primary-link-color-inverse;
+    }
+}
+
+ol {
+    list-style-position: inside;
+    margin-bottom: 0;       
+    margin-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    
+    li {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
