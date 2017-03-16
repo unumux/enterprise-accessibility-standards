@@ -1,5 +1,10 @@
 @mixin base() {
-
+    color: $primary-text-color;
+    max-width: 1200px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
 }
 
 .article {
