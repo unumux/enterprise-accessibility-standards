@@ -1,10 +1,11 @@
 //Content section backgrounds
-$primary-background-color: #112633;
-$secondary-background-color: #8ca5ba;
+$primary-background-color: #142e44;
+$secondary-background-color: #061724;
+
 //Text
 $primary-text-color: #061724;
 $primary-text-color-inverse: #fff;
-$primary-text-color-disabled: #b4c2cd;
+$primary-text-color-disabled: #8ca5ba;
 $secondary-text-color: #2bb6d9;
 
 $primary-link-color: #2bb6d9;
@@ -13,8 +14,7 @@ $primary-link-color-inverse: #fff;
 //Accents
 $primary-accent-color: #2bb6d9;
 $primary-accent-color-darker: #0983a2;
-
-
+$primary-accent-color-darkest: #1e3951;
 
 
 * {
@@ -23,7 +23,7 @@ $primary-accent-color-darker: #0983a2;
 
 body {
     background: $primary-background-color;
-    color: $primary-text-color;
+    color: $primary-text-color-inverse;
     font-family: "Open sans", arial, sans-serif;
     font-size: 1rem;
     padding-bottom: 0;
@@ -37,13 +37,18 @@ body {
 }
 
 h1 {
-    font-size: 1.35rem;
+
+    font-size: 2rem;
     font-family: oswald, arial, sans-serif;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
     text-transform: uppercase;
+
+    @media screen and(min-width: 640px) {
+       font-size: 3rem; 
+    }
 }
 
 h2 {
