@@ -16,7 +16,8 @@
     @include base;
 
     h2 {
-        border-bottom: 1px solid $primary-text-color;
+        border-bottom: 1px solid $primary-accent-color-darkest;
+        color: $primary-text-color-inverse;
         padding-left: 0;
         padding-right: 0;
     }

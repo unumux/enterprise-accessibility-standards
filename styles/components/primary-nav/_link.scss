@@ -41,5 +41,9 @@ $nav-text: $primary-text-color-inverse;
 
         @include base;
         background-color: $nav-bgcolor-active;
+
+        &:hover {
+            background-color: $nav-bgcolor-active;
+        }
     }
 }
