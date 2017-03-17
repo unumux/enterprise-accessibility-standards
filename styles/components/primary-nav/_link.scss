@@ -1,6 +1,8 @@
 $nav-bgcolor: $primary-accent-color-darker;
 $nav-bgcolor-active: $primary-accent-color;
 $nav-text: $primary-text-color-inverse;
+$nav-hover: #26455f;
+
 
 @mixin base() {
     color: $nav-text;
@@ -14,23 +16,20 @@ $nav-text: $primary-text-color-inverse;
 
     @media screen and(min-width: 640px) {
         padding-bottom: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-top: 2rem;
     }
 
     &:hover {
-        background-color: lighten($nav-bgcolor, 5%);
+        background-color: $nav-hover;
         transition: background .2s;
     }
 
     &:focus {
-        background-color: $nav-bgcolor;
+        background-color: $nav-hover;
         transition: background .2s;
     }
 
     &:active {
-        background-color: $nav-bgcolor-active;
+        background-color: $primary-accent-color-darkest;
         transition: background .2s;
     }
 }
@@ -40,10 +39,10 @@ $nav-text: $primary-text-color-inverse;
     &--active {
 
         @include base;
-        background-color: $nav-bgcolor-active;
+        background-color: $primary-accent-color-darkest;
 
         &:hover {
-            background-color: $nav-bgcolor-active;
+            background-color: $primary-accent-color-darkest;
         }
     }
 }

@@ -1,5 +1,7 @@
 @mixin base() {
     background-color: $primary-accent-color-darker;
+    display: flex;
+    flex-flow: row-nowrap;
 }
 
 .willow-primary-nav {
