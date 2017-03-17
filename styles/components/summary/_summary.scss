@@ -7,10 +7,10 @@
     margin-top: 1rem;
 }
 
-.article {
+.willow-summary {
     @include base;
 
     @import "content";
     @import "heading";
-    @import "summary";
+    @import "subsummary";
 }
