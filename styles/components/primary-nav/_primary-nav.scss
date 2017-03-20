@@ -1,12 +1,15 @@
 @mixin base() {
     background-color: $primary-accent-color-darker;
+    display: flex;
+    flex-flow: row-nowrap;
+    justify-content: center;
 }
 
 .willow-primary-nav {
     @include base;
     
     @import "heading";
-    @import "toggle-link";
+    //@import "toggle-link";
     @import "list";
     @import "item";
     @import "link";
