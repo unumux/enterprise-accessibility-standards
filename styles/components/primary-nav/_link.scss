@@ -3,19 +3,23 @@ $nav-bgcolor-active: $primary-accent-color;
 $nav-text: $primary-text-color-inverse;
 $nav-hover: #26455f;
 
-
 @mixin base() {
     color: $nav-text;
     display: block;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+    font-weight: 600;
+    padding-bottom: 1.05rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-top: 0.75rem;
     text-decoration: none;
     transition: background .3s;
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    text-transform: uppercase;
 
     @media screen and(min-width: 640px) {
-        padding-bottom: 2rem;
+        padding-bottom: 1.1rem;
     }
 
     &:hover {

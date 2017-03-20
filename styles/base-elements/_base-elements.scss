@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 //Content section backgrounds
 $primary-background-color: #142e44;
 $secondary-background-color: #33526c;
+$primary-accent-border-color: #8ca5ba;
 
 //Text
 $primary-text-color: #061724;
 $primary-text-color-inverse: #fff;
 $primary-text-color-disabled: #8ca5ba;
 $secondary-text-color: #2bb6d9;
+$tertiary-text-color: #8ca5ba;
 
 $primary-link-color: #2bb6d9;
 $primary-link-color-darker: #0983a2; 
@@ -17,8 +22,15 @@ $primary-accent-color-darker: #33526c;
 $primary-accent-color-darkest: #1e3951;
 
 
+
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;     
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    color: $primary-text-color;
+    background-color: $primary-accent-color;
 }
 
 body {
@@ -37,9 +49,9 @@ body {
 }
 
 h1 {
-
     font-size: 2rem;
-    font-family: oswald, arial, sans-serif;
+    font-weight: 600;
+    line-height: 3rem;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -47,11 +59,14 @@ h1 {
     text-transform: uppercase;
 
     @media screen and(min-width: 640px) {
-       font-size: 3rem; 
+       font-size: 2.2rem; 
     }
 }
 
 h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.9rem;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -61,30 +76,30 @@ h2 {
     padding-right: 1rem;
     padding-top: 1rem;
     text-transform: uppercase;
-
 }
 
 h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4rem;
     text-transform: uppercase;
-    font-weight: 700;
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
 }
 
 p {
-    //padding-left: 1rem;
     margin-top: 0;
     margin-bottom: .5rem;
 }
 
 ul {
     list-style-type: none;
-    margin-bottom: 0;       
+    margin-bottom: 2rem;       
     margin-top: 0;
     padding-bottom: 1rem;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 1rem;
+    padding-top: 0;
 
     li {
         padding-top: 0.5rem;
@@ -93,10 +108,10 @@ ul {
 }
 
 a {
-    color: $primary-link-color-inverse;
+    color: $primary-link-color;
     
     &:hover {
-        text-decoration: none;
+        //text-decoration: none;
     }
     &:active {
 
@@ -105,7 +120,9 @@ a {
 
     }
     &:focus {
-        outline-color: $primary-link-color-inverse;
+        outline-width: 3px;
+        outline-style: solid;
+        outline-color: $primary-link-color;
     }
 }
 
@@ -122,4 +139,9 @@ ol {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
+}
+
+code {
+    font-family: "Source Code Pro", monospace;
+    color: $tertiary-text-color;
 }
