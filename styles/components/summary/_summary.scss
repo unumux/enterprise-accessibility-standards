@@ -1,0 +1,18 @@
+@mixin base() {
+    color: $primary-text-color-inverse;
+    max-width: 1200px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.willow-summary {
+    @include base;
+
+    @import "content";
+    @import "heading";
+    @import "subsummary";
+}

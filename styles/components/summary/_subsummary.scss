@@ -1,0 +1,16 @@
+@mixin base() {
+    color: $primary-text-color-inverse;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    max-width: 1200px;
+}
+
+&__summary {
+    @include base;
+}
