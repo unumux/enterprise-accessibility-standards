@@ -1,4 +1,4 @@
-&__heading {
+@mixin base() {
     color: $primary-text-color-inverse;
     font-size: 1.4rem;     
     font-weight: 400;
@@ -14,7 +14,15 @@
     text-align: left;
     border-top: 5px solid $primary-accent-border-color;
 
+    .disabled & {
+        color: $primary-text-color-disabled;
+    }
+
     @media screen and(min-width: 640px) {
         font-size: 1.4rem;
     }
+}
+
+&__heading {
+    @include base;
 }

@@ -1,5 +1,4 @@
 @mixin base() {
-    //background-color: $secondary-background-color;
     border-radius: 4px;
     margin-bottom: 0;
     margin-left: 0;
@@ -9,6 +8,10 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 2rem;
+
+    .disabled & {
+        color: $primary-text-color-disabled;
+    }
 }
 
 &__content {
@@ -16,16 +19,9 @@
 
     h2 {
         border-top: 1px solid $primary-accent-color-darker;
-        color: $primary-text-color-inverse;
         padding-top: 0;
         padding-left: 0;
         padding-right: 0;
 
-    }
-
-    & .disabled {
-        h3 {
-            color: $primary-text-color-disabled;
-        }
     }
 }
