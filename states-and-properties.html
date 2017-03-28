@@ -17,12 +17,7 @@
                         <a class="willow-primary-nav__link" href="./index.html">
                             General
                         </a>
-                    </li>
-                    <li class="willow-primary-nav__item">
-                        <a class="willow-primary-nav__link" href="./definitions.html">
-                            Definitions
-                        </a>
-                    </li>                
+                    </li>             
                     <li class="willow-primary-nav__item">
                         <a class="willow-primary-nav__link" href="./roles.html">
                             Aria Roles
@@ -37,7 +32,12 @@
                         <a class="willow-primary-nav__link" href="./wcag.html">
                             WCAG 2.0
                         </a>
-                    </li>             
+                    </li>  
+                    <li class="willow-primary-nav__item">
+                        <a class="willow-primary-nav__link" href="./tools.html">
+                            Tools
+                        </a>
+                    </li>                                 
                 </ul>
             </nav>
         </div>
@@ -50,24 +50,28 @@
         </h2>
     </header>
     <main class="willow-page-content">
-
+        <section class="willow-summary">
+            <h1 class="willow-summary__heading">Definitions</h1>
+            <div class="willow_summary__content">
+                <dl>
+                    <dt>Active</dt>
+                    <dd>The Enterprise is currently using Roles marked 'active'</dd>
+                    <dt>Inactive</dt>
+                    <dd>The Enterprise is currently not using Roles marked 'inactive'</dd>
+                </dl>
+            </div>
+        </section>
         <section class="willow-summary">
             <h1 class="willow-summary__heading">
-                Global States and Properties
+                Active Global States and Properties
             </h1>
             <div class="willow-summary__content">
                 <h2>Global States</h2>
                 <ul>
-                    <li class="disabled">
-                        <h3>aria-busy<h3>
-                    </li>
                     <li>
                         <h3>aria-disabled</h3>
                         <p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. See related aria-hidden and aria-readonly</p>
                         <p>Boolean</p>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-grabbed</h3>    
                     </li>
                     <li>
                         <h3>aria-hidden</h3>
@@ -80,9 +84,6 @@
                 </ul>
                 <h2>Global Properties</h2>
                 <ul>
-                    <li class="disabled">
-                        <h3>aria-atomic</h3>
-                    </li>
 	                <li>
                         <h3>aria-controls</h3>
                         <p>Identifies the element (or elements) whose contents or presence are controlled by the current element. See related aria-owns.</p>
@@ -92,15 +93,6 @@
                         <h3>aria-describedby</h3>
                         <p>Identifies the element (or elements) that describes the object.See related aria-labelledby.</p>
                     </li>
-                    <li class="disabled">
-                        <h3>aria-dropeffect</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-flowto</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-haspopup</h3>
-                    </li>
                     <li>
                         <h3>aria-label</h3>
                         <p>Defines a string value that labels the current element. See related aria-label and aria-describedby.</p>
@@ -109,21 +101,12 @@
                         <h3>aria-labelledby</h3>
                         <p>Identifies the element (or elements) that labels the current element. See related aria-label and aria-describedby.</p>
                     </li>
-                    <li class="disabled">
-                        <h3>aria-live</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-owns</h3>
-                    </li> 
-                    <li class="disabled">
-                        <h3>aria-relevant</h3>
-                    </li>
                 </ul>
             </div>
         </section>
         <section  class="willow-summary">
             <h1 class="willow-summary__heading">
-                Widget States and Properties
+                Active Widget States and Properties
             </h1>
             <div class="willow-summary__content">
                 <h2>Widget States</h2>
@@ -136,18 +119,9 @@
                         <h3>aria-disabled</h3>
                         <p>Indicates that the element is perceivable but disabled, so it is not editable or otherwise operable. See related aria-hidden and aria-readonly.</p>
                     </li>
-                    <li class="disabled">
-                        <h3>aria-expanded</h3>
-                    </li>
                     <li>
                         <h3>aria-hidden</h3>
                         <p>Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author. See related aria-disabled.</p>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-invalid</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-pressed</h3>
                     </li>
                     <li>
                         <h3>aria-selected</h3>
@@ -156,24 +130,9 @@
                 </ul>
                 <h2>Widget Property Attributes</h2>
                 <ul>
-                    <li class="disabled">
-                        <h3>aria-autocomplete</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-haspopup</h3>
-                    </li>
                     <li>
                         <h3>aria-label</h3>
                         <p>Defines a string value that labels the current element. See related aria-label and aria-describedby.</p>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-level</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-multiline</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-multiselectable</h3>
                     </li>
                     <li>
                         <h3>aria-orientation</h3>
@@ -187,85 +146,16 @@
                         <h3>aria-required</h3>
                         <p>Indicates that user input is required on the element before a form may be submitted.</p>
                     </li>
-                    <li class="disabled">
-                        <h3>aria-sort</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-valuemax</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-valuemin</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-valuenow</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-valuetext</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="willow-summary">
-            <h1 class="willow-summary__heading">
-                Live Region State and Property Attributes
-            </h1>
-            <div class="willow-summary__content">
-                <h2>Live Region States</h2>
-                <ul>
-                    <li class="disabled">
-                        <h3>aria-busy</h3>
-                    </li>
-                </ul>
-                <h2>Live Region Properties</h2>
-                <ul>
-                    <li class="disabled">
-                        <h3>aria-atomic</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-live</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-relevant</h3>
-                    </li>
                 </ul>
             </div>
         </section>
        <section class="willow-summary">
-            <h1 class="willow-summary__heading">Drag and Drop State and Property Attributes</h1>
-            <div class="willow-summary__content">
-                <h2>Drag and Drop States</h2>
-                <ul>
-                    <li class="disabled">
-                        <h3>aria-grabbed</h3>
-                    </li>
-                </ul>
-                <h2>Drag and Drop Properties</h2>
-                <ul>
-                    <li class="disabled">
-                        <h3>aria-dropeffect</h3>
-                    </li>
-                </ul>
-            </div>
-       </section>
-       <section class="willow-summary">
             <h1 class="willow-summary__heading">
-                Relationship State and Property Attributes
+                Active Relationship State and Property Attributes
             </h1>
             <div class="willow-summary__content">
-                <h2>Drag and Drop States</h2>
-                <ul>
-                    <li class="disabled">
-                        <h3>N/A</h3>
-                    </li>
-                </ul>
                 <h2>Drag and Drop Properties</h2>
                 <ul>
-                    <li class="disabled">
-                        <h3>aria-activedescendant</h3>
-                    </li>
-                    <li class="disabled">
-                        <h3>aria-controls</h3>
-                    </li>
                     <li>
                         <h3>aria-describedby</h3>
                         <p>Identifies the element (or elements) that describes the object.See related aria-labelledby.</p>
@@ -278,13 +168,170 @@
                         <h3>aria-labelledby</h3>
                         <p>Identifies the element (or elements) that labels the current element. See related aria-label and aria-describedby.</p>
                     </li>
-                    <li class="disabled">
+                </ul>
+            </div>
+       </section>
+
+        <section class="willow-summary disabled">
+            <h1 class="willow-summary__heading">
+                Inactive Global States and Properties
+            </h1>
+            <div class="willow-summary__content">
+                <h2>Global States</h2>
+                <ul>
+                    <li>
+                        <h3>aria-busy<h3>
+                    </li>
+                    <li>
+                        <h3>aria-grabbed</h3>    
+                    </li>
+                </ul>
+                <h2>Global Properties</h2>
+                <ul>
+                    <li>
+                        <h3>aria-atomic</h3>
+                    </li>
+                    <li>
+                        <h3>aria-dropeffect</h3>
+                    </li>
+                    <li>
+                        <h3>aria-flowto</h3>
+                    </li>
+                    <li>
+                        <h3>aria-haspopup</h3>
+                    </li>
+                    <li>
+                        <h3>aria-live</h3>
+                    </li>
+                    <li>
+                        <h3>aria-owns</h3>
+                    </li> 
+                    <li>
+                        <h3>aria-relevant</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section  class="willow-summary disabled">
+            <h1 class="willow-summary__heading">
+                Inactive Widget States and Properties
+            </h1>
+            <div class="willow-summary__content">
+                <h2>Widget States</h2>
+                <ul>
+                    <li>
+                        <h3>aria-expanded</h3>
+                    </li>
+                    <li>
+                        <h3>aria-invalid</h3>
+                    </li>
+                    <li>
+                        <h3>aria-pressed</h3>
+                    </li>
+                </ul>
+                <h2>Widget Property Attributes</h2>
+                <ul>
+                    <li>
+                        <h3>aria-autocomplete</h3>
+                    </li>
+                    <li>
+                        <h3>aria-haspopup</h3>
+                    </li>
+                    <li>
+                        <h3>aria-level</h3>
+                    </li>
+                    <li>
+                        <h3>aria-multiline</h3>
+                    </li>
+                    <li>
+                        <h3>aria-multiselectable</h3>
+                    </li>
+                    <li>
+                        <h3>aria-sort</h3>
+                    </li>
+                    <li>
+                        <h3>aria-valuemax</h3>
+                    </li>
+                    <li>
+                        <h3>aria-valuemin</h3>
+                    </li>
+                    <li>
+                        <h3>aria-valuenow</h3>
+                    </li>
+                    <li>
+                        <h3>aria-valuetext</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="willow-summary disabled">
+            <h1 class="willow-summary__heading">
+                Inactive Live Region State and Property Attributes
+            </h1>
+            <div class="willow-summary__content">
+                <h2>Live Region States</h2>
+                <ul>
+                    <li>
+                        <h3>aria-busy</h3>
+                    </li>
+                </ul>
+                <h2>Live Region Properties</h2>
+                <ul>
+                    <li>
+                        <h3>aria-atomic</h3>
+                    </li>
+                    <li>
+                        <h3>aria-live</h3>
+                    </li>
+                    <li>
+                        <h3>aria-relevant</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+       <section class="willow-summary disabled">
+            <h1 class="willow-summary__heading">Drag and Drop State and Property Attributes</h1>
+            <div class="willow-summary__content">
+                <h2>Drag and Drop States</h2>
+                <ul>
+                    <li>
+                        <h3>aria-grabbed</h3>
+                    </li>
+                </ul>
+                <h2>Drag and Drop Properties</h2>
+                <ul>
+                    <li>
+                        <h3>aria-dropeffect</h3>
+                    </li>
+                </ul>
+            </div>
+       </section>
+       <section class="willow-summary disabled">
+            <h1 class="willow-summary__heading">
+                Relationship State and Property Attributes
+            </h1>
+            <div class="willow-summary__content">
+                <h2>Drag and Drop States</h2>
+                <ul>
+                    <li>
+                        <h3>N/A</h3>
+                    </li>
+                </ul>
+                <h2>Drag and Drop Properties</h2>
+                <ul>
+                    <li>
+                        <h3>aria-activedescendant</h3>
+                    </li>
+                    <li>
+                        <h3>aria-controls</h3>
+                    </li>
+                    <li>
                         <h3>aria-owns</h3>
                     </li>
-                    <li class="disabled">
+                    <li>
                         <h3>aria-posinset</h3>
                     </li>
-                    <li class="disabled">
+                    <li>
                         <h3>aria-setsize</h3>
                     </li>
                 </ul>

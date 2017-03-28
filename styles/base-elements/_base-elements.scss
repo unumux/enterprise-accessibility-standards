@@ -141,7 +141,28 @@ ol {
     }
 }
 
+dt {
+    font-weight: 700;
+    &:after {
+        content: " - ";
+        float: left;
+    }
+}
+dd {
+    margin-left: 0.75rem;
+}
+
 code {
     font-family: "Source Code Pro", monospace;
     color: $tertiary-text-color;
 }
+
+// .disabled {
+//     color: $primary-text-color-disabled;
+//     & * {
+//         color: $primary-text-color-disabled;
+//     }
+//     * & {
+//         color: $primary-text-color-disabled;
+//     }
+// }

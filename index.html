@@ -16,12 +16,7 @@
                         <a class="willow-primary-nav__link--active" href="./index.html">
                             General
                         </a>
-                    </li>
-                    <li class="willow-primary-nav__item">
-                        <a class="willow-primary-nav__link" href="./definitions.html">
-                            Definitions
-                        </a>
-                    </li>                
+                    </li>               
                     <li class="willow-primary-nav__item">
                         <a class="willow-primary-nav__link" href="./roles.html">
                             Aria Roles
@@ -36,7 +31,12 @@
                         <a class="willow-primary-nav__link" href="./wcag.html">
                             WCAG 2.0
                         </a>
-                    </li>             
+                    </li>  
+                    <li class="willow-primary-nav__item">
+                        <a class="willow-primary-nav__link" href="./tools.html">
+                            Tools
+                        </a>
+                    </li>                                 
                 </ul>
             </nav>
         </div>
@@ -53,7 +53,6 @@
         <section class="willow-summary">
             <h1 class="willow-summary__heading">Guidelines</h1>
             <div class='willow-summary__content'>
-                <p>Anything you can do with your mouse, make sure you can do it through the keyboard.</p>
                 <p>The enterprise strives to be WCAG 2.0 AA Compliant. A detailed list of WCAG 2.0 requirements can be found <a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=a%2Caaa"
 title="WCAG 2.0 Double A requirements" target="_blank"> over on the W3 website</a>.</p>
                     <p>WAI-ARIA defines a way to make Web content and Web applications more accessible to people with disabilities.</p>
@@ -63,7 +62,7 @@ title="WCAG 2.0 Double A requirements" target="_blank"> over on the W3 website</
 
                 <ol>
                     <li>
-                        If you can use a native HTML element or attribute with the semantics and behaviour you require already built in, instead of re-purposing an element and adding an ARIA role, state, or property to make it accessible, then do so
+                        If you can use a native HTML element or attribute with the semantics and behaviour you require already built in (like 'header' or 'nav', use that instead of re-purposing a more generic element(like 'div') and adding an ARIA role, state, or property to make it accessible.
                     </li>
 
                     <li>
@@ -73,11 +72,6 @@ title="WCAG 2.0 Double A requirements" target="_blank"> over on the W3 website</
                     <li>
                         Add skip links at the top of the page to guide the user over areas they would like to skip
                     </li>
-
-                    <li>
-                        Do not use <code>role="presentation"</code> or <code>aria-hidden="true"</code> on a visible focusable element. This would result in some users focusing on 'nothing'.
-                    </li>
-
                     <li>
                         Include alternative text for meaningful images
                     </li>
@@ -102,6 +96,8 @@ title="WCAG 2.0 Double A requirements" target="_blank"> over on the W3 website</
                 Keyboard Requirements
             </h1>
             <div class="willow-summary__content">
+                <p>Anything you can do with your mouse, make sure you can do it through the keyboard.</p>
+
                 <ol>
                     <li>
                         Ensure that all interactive elements are keyboard accessible
