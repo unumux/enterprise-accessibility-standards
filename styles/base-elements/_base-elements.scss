@@ -111,7 +111,7 @@ a {
     color: $primary-link-color;
     
     &:hover {
-        //text-decoration: none;
+        z-index: 999;
     }
     &:active {
 
@@ -123,6 +123,7 @@ a {
         outline-width: 3px;
         outline-style: solid;
         outline-color: $primary-link-color;
+        z-index: 999;
     }
 }
 
@@ -156,13 +157,3 @@ code {
     font-family: "Source Code Pro", monospace;
     color: $tertiary-text-color;
 }
-
-// .disabled {
-//     color: $primary-text-color-disabled;
-//     & * {
-//         color: $primary-text-color-disabled;
-//     }
-//     * & {
-//         color: $primary-text-color-disabled;
-//     }
-// }
