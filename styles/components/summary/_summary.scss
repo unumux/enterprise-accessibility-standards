@@ -9,9 +9,9 @@
     padding-right: 1rem;
 
     & .disabled {
-    & * {
-        color: $primary-text-color-disabled;
-    }
+        & * {
+            color: $primary-text-color-disabled;
+        }
     }
 }
 
