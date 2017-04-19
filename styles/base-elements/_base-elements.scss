@@ -21,8 +21,6 @@ $primary-accent-color: #2bb6d9;
 $primary-accent-color-darker: #33526c;
 $primary-accent-color-darkest: #1e3951;
 
-
-
 * {
     box-sizing: border-box;     
     -webkit-font-smoothing: antialiased;
@@ -111,7 +109,7 @@ a {
     color: $primary-link-color;
     
     &:hover {
-        z-index: 999;
+        //z-index: 999;
     }
     &:active {
 
