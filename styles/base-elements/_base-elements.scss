@@ -103,13 +103,18 @@ ul {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
+
+    ul {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 }
 
 a {
     color: $primary-link-color;
     
     &:hover {
-        //z-index: 999;
+        z-index: 999;
     }
     &:active {
 
