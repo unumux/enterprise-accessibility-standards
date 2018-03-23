@@ -9,7 +9,11 @@
         "main": "scripts/site.js"
     },
     "watch": [
-        "index.html"
+        "index.html",
+        "roles.html",
+        "states-and-properties.html",
+        "tools.html",
+        "wcag.html"
     ],
     "server": true,
     "compileJs": true,

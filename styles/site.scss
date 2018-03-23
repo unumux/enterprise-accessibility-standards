@@ -1,4 +1,24 @@
-@import "styles/base-elements/base-elements";
-@import "styles/components/components";
+@import "../node_modules/@unumux/theme-unum-default/styles";
+$text-style-heading-1: ( family: $font-family-primary, desktop-size: 3.58318rem, desktop-line-height: line-height($font-size-4xl), mobile-size: 3.58318rem, mobile-line-height: line-height($font-size-3xl), weight: 400);
+$text-style-heading-2: ( family: $font-family-primary, desktop-size: 2.48832rem, desktop-line-height: line-height($font-size-2xl), mobile-size: 2.48832rem, mobile-line-height: line-height($font-size-xl), weight: 400);
+$text-style-heading-3: ( family: $font-family-secondary, desktop-size: 2.0736rem, desktop-line-height: line-height($font-size-xl), mobile-size: 1.728rem, mobile-line-height: line-height($font-size-l), weight: 600);
+@import "./node_modules/@unumux/willow/styles";
+h2 {
+    color: $theme-text-secondary;
+}
 
+h3 {
+    color: $theme-text-tertiary;
+}
 
+pre {
+    background-color: $theme-base-3;
+    margin: $space-stack-s;
+}
+
+.willow-primary-nav__link {
+    @include set-text-style($text-style-heading-5);
+    @media screen and (min-width: 828px) {
+        padding: $space-inset-squish;
+    }
+}
