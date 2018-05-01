@@ -11,6 +11,11 @@
 
 <body>
     <div class="willow-page-container">
+        <div class="willow-skip-nav">
+            <div class="container-fluid">
+                <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+            </div>
+        </div>
         <header class="willow-page-header">
             <div class="container-fluid willow-page-header__container">
                 <div class="willow-page-header__branding">
@@ -115,13 +120,13 @@
                 </div>
             </div>
         </header>
-        <main class="willow-page-content flex-grow">
+        <main class="willow-page-content flex-grow" id="mainContent">
             <div class="container">
                 <div class="willow-styling-context">
                     <h1>General Accessibility Guidelines</h1>
                     <p>The enterprise strives to be WCAG 2.0 AA Compliant. A detailed list of WCAG 2.0 requirements can be found
-                        <a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=a%2Caaa"
-                            title="WCAG 2.0 Double A requirements" target="_blank"> on the W3 website</a>.</p>
+                        <a href="https://www.w3.org/WAI/WCAG20/quickref/?currentsidebar=%23col_customize&levels=a%2Caaa" title="WCAG 2.0 Double A requirements"
+                            target="_blank"> on the W3 website</a>.</p>
                     <h2>Guidelines</h2>
                     <ol>
                         <li>If you can use a native HTML element or attribute with the semantics and behavior you require already
@@ -226,8 +231,7 @@
                         <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                         <ul class="willow-footer-nav__list">
                             <li class="willow-footer-nav__item">
-                                <a class="willow-footer-nav__link" href="https://unumux.github.io/enterprise-accessibility-standards/index.html"
-                                    aria-label="Got to the home page">Home</a>
+                                <a class="willow-footer-nav__link" href="https://unumux.github.io/enterprise-accessibility-standards/index.html" aria-label="Got to the home page">Home</a>
                             </li>
                             <li class="willow-footer-nav__item">
                                 <a class="willow-footer-nav__link" href="./roles.html" aria-label="Go to the page about creating stylesheets">Aria Roles</a>

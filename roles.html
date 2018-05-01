@@ -11,6 +11,11 @@
 
 <body>
     <div class="willow-page-container">
+        <div class="willow-skip-nav">
+            <div class="container-fluid">
+                <a href="#mainContent" class="willow-skip-nav__link" aria-label="skip to main content">Skip to Content</a>
+            </div>
+        </div>
         <header class="willow-page-header" role="banner">
             <div class="container willow-page-header__container">
                 <div class="willow-page-header__branding">
@@ -117,7 +122,7 @@
                 </div>
             </div>
         </header>
-        <main class="willow-page-content flex-grow">
+        <main class="willow-page-content flex-grow" id="mainContent">
             <div class="container">
                 <h1>Aria Roles</h1>
                 <h2>Definitions</h2>
@@ -145,21 +150,29 @@
                             <code>
                                 <a href="https://www.w3.org/TR/wai-aria/roles#status">status</a>
                             </code>.</p>
-                        <p>The<code>alert</code> role goes on the node containing the alert message.</p>
+                        <p>The
+                            <code>alert</code> role goes on the node containing the alert message.</p>
                         <p>Authors should NOT require users to close an alert. If an alert requires focus to close the alert,
                             authors should use
-                            <code><a href="">alertdialog</a></code> instead.</p>
+                            <code>
+                                <a href="">alertdialog</a>
+                            </code> instead.</p>
                     </li>
                     <li>
                         <h3>Alertdialog</h3>
                         <p>A type of dialog that contains an alert message. See related
-                            <code><a href="">alert</a></code> and
-                            <code><a href="">dialog</a></code>.</p>
+                            <code>
+                                <a href="">alert</a>
+                            </code> and
+                            <code>
+                                <a href="">dialog</a>
+                            </code>.</p>
                         <p>When the alertdialog is displayed, authors should set focus to an active element within the alert
                             dialog, such as a form field or an OK button.</p>
                         <p>The
                             <code>alertdialog</code> role goes on the node containing both the alert message and the rest of the
-                            dialog.</p>
+                            dialog.
+                        </p>
                         <p>Authors should make alert dialogs modal.</p>
                         <p>Authors should use
                             <code>
@@ -191,7 +204,11 @@
                         <h3>Region</h3>
                         <p>A large perceivable section of a web page or document, that is important enough to be included in
                             a page summary or table of contents.</p>
-                        <p>Authors should ensure that a <code>region</code> has a heading referenced by <code><a href="">aria-labelledby</a></code>.</p>
+                        <p>Authors should ensure that a
+                            <code>region</code> has a heading referenced by
+                            <code>
+                                <a href="">aria-labelledby</a>
+                            </code>.</p>
                     </li>
                 </ul>
                 <h2>Active Landmark Roles</h2>
@@ -515,8 +532,7 @@
                         <h1 class="willow-footer-nav__heading sr-only">Site Footer Menu</h1>
                         <ul class="willow-footer-nav__list">
                             <li class="willow-footer-nav__item">
-                                <a class="willow-footer-nav__link" href="https://unumux.github.io/enterprise-accessibility-standards/index.html"
-                                    aria-label="Got to the home page">Home</a>
+                                <a class="willow-footer-nav__link" href="https://unumux.github.io/enterprise-accessibility-standards/index.html" aria-label="Got to the home page">Home</a>
                             </li>
                             <li class="willow-footer-nav__item">
                                 <a class="willow-footer-nav__link" href="./roles.html" aria-label="Go to the page about creating stylesheets">Aria Roles</a>
