@@ -22,11 +22,13 @@
 
 "@unumux/stylelint-config-unumux@^1.0.1":
   version "1.0.1"
-  resolved "http://registry.npmjs.org/@unumux/stylelint-config-unumux/-/stylelint-config-unumux-1.0.1.tgz#34a724c5fdf19482af5d54fc22f5162a972c3378"
+  resolved "https://registry.npmjs.org/@unumux/stylelint-config-unumux/-/stylelint-config-unumux-1.0.1.tgz#34a724c5fdf19482af5d54fc22f5162a972c3378"
 
-"@unumux/theme-unum-default@git+https://github.com/unumux/theme-unum-default.git#develop":
-  version "0.5.0"
-  resolved "git+https://github.com/unumux/theme-unum-default.git#73a4a6180cae13d09cba3d0a4fb0f1626f087284"
+"@unumux/theme-unum-default@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@unumux/theme-unum-default/-/theme-unum-default-1.0.0.tgz#d441443cd4c0e0a0cb9b20af0879bcba5937b22b"
+  dependencies:
+    "@unumux/willow" "^1.0.0"
 
 "@unumux/ux-build-tools@^3.6.0":
   version "3.6.0"
@@ -76,12 +78,11 @@
     vinyl-source-stream "^1.1.0"
     watchify "^3.2.1"
 
-"@unumux/willow@git+https://github.com/unumux/willow.git#develop":
-  version "0.3.0"
-  resolved "git+https://github.com/unumux/willow.git#9be6063d004facb44ab3fffffc5cbec7763eddfa"
+"@unumux/willow@^1.0.0", "@unumux/willow@^1.0.2":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@unumux/willow/-/willow-1.1.1.tgz#2ad14494be9a7084ad9053e9ae1167db0d9dfd30"
   dependencies:
     bootstrap "^4.0.0"
-    normalize.css "^4.0.0"
 
 JSONStream@^0.8.4:
   version "0.8.4"
@@ -3004,8 +3005,10 @@ gaze@^1.0.0:
     globule "^1.0.0"
 
 generate-function@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.0.0.tgz#6858fe7c0969b7d4e9093337647ac79f60dfbe74"
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.3.1.tgz#f069617690c10c868e73b8465746764f97c3479f"
+  dependencies:
+    is-property "^1.0.2"
 
 generate-object-property@^1.1.0:
   version "1.2.0"
@@ -3820,12 +3823,17 @@ is-glob@^2.0.0, is-glob@^2.0.1:
   dependencies:
     is-extglob "^1.0.0"
 
+is-my-ip-valid@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-my-ip-valid/-/is-my-ip-valid-1.0.0.tgz#7b351b8e8edd4d3995d4d066680e664d94696824"
+
 is-my-json-valid@^2.10.0, is-my-json-valid@^2.12.4:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/is-my-json-valid/-/is-my-json-valid-2.15.0.tgz#936edda3ca3c211fd98f3b2d3e08da43f7b2915b"
+  version "2.17.2"
+  resolved "https://registry.yarnpkg.com/is-my-json-valid/-/is-my-json-valid-2.17.2.tgz#6b2103a288e94ef3de5cf15d29dd85fc4b78d65c"
   dependencies:
     generate-function "^2.0.0"
     generate-object-property "^1.1.0"
+    is-my-ip-valid "^1.0.0"
     jsonpointer "^4.0.0"
     xtend "^4.0.0"
 
@@ -3870,7 +3878,7 @@ is-primitive@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-primitive/-/is-primitive-2.0.0.tgz#207bab91638499c07b2adf240a41a87210034575"
 
-is-property@^1.0.0:
+is-property@^1.0.0, is-property@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
 
@@ -5187,10 +5195,6 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
-
-normalize.css@^4.0.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-4.2.0.tgz#21d66cc557154d4379fd1e079ec7de58a379b099"
 
 npmconf@^2.0.1:
   version "2.1.2"
@@ -7680,8 +7684,8 @@ xmlhttprequest-ssl@1.5.3:
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.3.tgz#185a888c04eca46c3e4070d99f7b49de3528992d"
 
 "xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0, xtend@~4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
 
 xtend@~3.0.0:
   version "3.0.0"
