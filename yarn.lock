@@ -22,11 +22,13 @@
 
 "@unumux/stylelint-config-unumux@^1.0.1":
   version "1.0.1"
-  resolved "http://registry.npmjs.org/@unumux/stylelint-config-unumux/-/stylelint-config-unumux-1.0.1.tgz#34a724c5fdf19482af5d54fc22f5162a972c3378"
+  resolved "https://registry.npmjs.org/@unumux/stylelint-config-unumux/-/stylelint-config-unumux-1.0.1.tgz#34a724c5fdf19482af5d54fc22f5162a972c3378"
 
-"@unumux/theme-unum-default@git+https://github.com/unumux/theme-unum-default.git#develop":
-  version "0.5.0"
-  resolved "git+https://github.com/unumux/theme-unum-default.git#73a4a6180cae13d09cba3d0a4fb0f1626f087284"
+"@unumux/theme-unum-default@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@unumux/theme-unum-default/-/theme-unum-default-1.0.0.tgz#d441443cd4c0e0a0cb9b20af0879bcba5937b22b"
+  dependencies:
+    "@unumux/willow" "^1.0.0"
 
 "@unumux/ux-build-tools@^3.6.0":
   version "3.6.0"
@@ -76,12 +78,11 @@
     vinyl-source-stream "^1.1.0"
     watchify "^3.2.1"
 
-"@unumux/willow@git+https://github.com/unumux/willow.git#develop":
-  version "0.3.0"
-  resolved "git+https://github.com/unumux/willow.git#9be6063d004facb44ab3fffffc5cbec7763eddfa"
+"@unumux/willow@^1.0.0", "@unumux/willow@^1.0.2":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@unumux/willow/-/willow-1.1.1.tgz#2ad14494be9a7084ad9053e9ae1167db0d9dfd30"
   dependencies:
     bootstrap "^4.0.0"
-    normalize.css "^4.0.0"
 
 JSONStream@^0.8.4:
   version "0.8.4"
@@ -1011,9 +1012,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@4.0.0, bootstrap@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0.tgz#ceb03842c145fcc1b9b4e15da2a05656ba68469a"
+bootstrap@4.3.1, bootstrap@^4.0.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
 
 bower-config@~0.5.0, bower-config@~0.5.2:
   version "0.5.2"
@@ -5187,10 +5188,6 @@ normalize-url@^1.4.0:
     prepend-http "^1.0.0"
     query-string "^4.1.0"
     sort-keys "^1.0.0"
-
-normalize.css@^4.0.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-4.2.0.tgz#21d66cc557154d4379fd1e079ec7de58a379b099"
 
 npmconf@^2.0.1:
   version "2.1.2"
